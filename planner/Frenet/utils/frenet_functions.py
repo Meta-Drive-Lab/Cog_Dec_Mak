@@ -602,7 +602,6 @@ def sort_frenet_trajectories(
         cog_matrix = np.load('cog_matrix.npy')
         belief_space = cog_matrix @ (reward_space.flatten()).T
         belief_space = np.array(belief_space).reshape((space.raw, space.col))
-        np.save("belief_space.npy", belief_space)
 
         for fp in fp_list:
 
