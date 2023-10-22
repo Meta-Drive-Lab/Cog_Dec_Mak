@@ -53,7 +53,7 @@ By default logs are saved and can be analyzed afterwards by running:
 
 [<img src="./readme/analysis.jpg" width="450" height="250">](/readme/analysis.jpg)
 
-The curves of velocity and acceleration can be seen by running *`python plot_vel_acc.py`
+The curves of velocity and acceleration can be seen by running `python plot_vel_acc.py`
 
 
 ## How to reproduce results
