@@ -39,7 +39,7 @@ To run the ethical planner on an exemplary default scenario, execute the followi
 
 ![Exemplary Result](readme/demo.gif)
 
-You will see a live visualization of the scenario being solved by the planner.
+You will see a live visualization of the demo.
 Now you can start with your own experiments by changing the [configs](/planner/Frenet/configs/README.md) or selecting another scenario by adding
 
 * `--scenario <path-to-scenario>`
@@ -51,7 +51,7 @@ By default logs are saved and can be analyzed afterwards by running:
 * `python planner/Frenet/analyze_tools/analyze_log.py`
 
 
-[<img src="./readme/log_analysis.png" width="450" height="250">](/readme/log_analysis.png)
+[<img src="./readme/log_analysis.png" width="450" height="250">](/readme/analysis.jpg)
 
 
 ## How to reproduce results
