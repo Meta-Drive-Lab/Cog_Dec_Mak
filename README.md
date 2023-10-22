@@ -51,7 +51,7 @@ By default logs are saved and can be analyzed afterwards by running:
 * `python planner/Frenet/analyze_tools/analyze_log.py`
 
 
-[<img src="./readme/log_analysis.png" width="450" height="250">](/readme/analysis.jpg)
+[<img src="./readme/analysis.jpg" width="450" height="250">](/readme/analysis.jpg)
 
 
 ## How to reproduce results
