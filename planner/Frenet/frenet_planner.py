@@ -585,7 +585,7 @@ if __name__ == "__main__":
     from planner.Frenet.plannertools.frenetcreator import FrenetCreator
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--scenario", default="recorded/scenario-factory/DEU_Speyer-5_1_T-1.xml")
+    parser.add_argument("--scenario", default="SUMO/DEU_Flensburg-80_1_T-1.xml")
     parser.add_argument("--time", action="store_true")
     args = parser.parse_args()
 
@@ -610,7 +610,7 @@ if __name__ == "__main__":
         planner_creator=frenet_creator,
         vehicle_type=settings_dict["evaluation_settings"]["vehicle_type"],
         path_to_scenarios=pathlib.Path(
-            os.path.join(mopl_path, "commonroad-scenarios/scenarios/")
+            os.path.join(mopl_path, "Cog_Dec_Mak/commonroad-scenarios/scenarios/")
         ).resolve(),
         log_path=pathlib.Path("./log/example").resolve(),
         collision_report_path=eval_directory,
