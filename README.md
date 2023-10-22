@@ -1,7 +1,7 @@
 
-# Cognitive Encoding for Decision Making of Autonomous Driving
+# Cog Enc for Dec Mak
 
-This repository is along with the paper 'Emergence of Societally Exemplary Behavior in Autonomous Driving from Bio-plausible Cognitive Encoding'. This README.md details how to reproduce the results of paper.
+This README.md details how to reproduce the results in our paper.
 
 ## System Requirements
 * Operating System: Linux Ubuntu 20.04 (recommended) or MacOS (only for demo)
@@ -69,6 +69,3 @@ Please note that at least 200 GB space left is required on your device for savin
 
 After tesing, standard evaluation metrics relevant to our paper such as the cummulated harm from 2000 benchmark scenarios can be seen within the results (`results/eval/harm.json`). 
 
-## Acknowledgement
-
-We would like to thank the planner provided in the paper '[An ethical trajectory planning algorithm for autonomous vehicles](https://doi.org/10.1038/s42256-022-00607-z)', a brilliant study that provides a benchmark for the ethical issue of different road users. Based on their benchmark and provided planner, we test our bio-plausible scheme for decision making.
