@@ -13,7 +13,7 @@ An isolated virtual environment is recommended for installation (such as Conda).
 
 1. Clone this repository with:
 
-    `git clone https://github.com/Meta-Drive-Lab/Cog-Dec-Mak.git`
+    `git clone https://github.com/Meta-Drive-Lab/Cog_Dec_Mak.git`
 
 2. Navigate to the root folder of the repository (`[..]/Cof_Dec_Mak`) and install requirements:
 
