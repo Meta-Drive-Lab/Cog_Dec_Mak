@@ -27,7 +27,7 @@ An isolated virtual environment is recommended for installation (such as Conda).
 
     ```
     ├── Cog_Dec_Mak (This repository)
-    ├── commonroad-scenarios
+      ├── commonroad-scenarios
     ```
     
 
