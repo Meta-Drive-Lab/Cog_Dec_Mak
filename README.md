@@ -69,3 +69,14 @@ Please note that at least 200 GB space left is required on your device for savin
 
 After tesing, standard evaluation metrics relevant to our paper such as the cummulated harm from 2000 benchmark scenarios can be seen within the results (`results/eval/harm.json`). 
 
+## Extensions
+
+We have added two additional modules to extend the original framework:
+
+### 🔁 Active_Inference
+
+This folder contains our implementation of **Active Inference-based decision-making**. It integrates free energy minimization as part of the trajectory evaluation process, enabling behavior that is more consistent with predictive coding and cognitive control principles.
+
+### 🧭 visualize_tool
+
+This folder provides **custom visualization tools** for inspecting trajectory planning results, including plots and risk distribution across timesteps. It helps better understand and analyze the internal planning logic.
