@@ -58,7 +58,7 @@ Ensure that the file path specified in main.py points to a valid scenario XML fi
 
 🧮 Params Input\
 	•	Time Step: Initial time step for planning\
-	•	Start Index: Starting index for planning reference trajectory
+	•	Start Index: Start position for EV
 
 🕹 Action Buttons\
 	•	Calculate Scenario: Initialize planner and generate risk trajectories\
