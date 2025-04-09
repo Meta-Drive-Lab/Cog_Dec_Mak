@@ -75,8 +75,8 @@ We have added two additional modules to extend the original framework:
 
 ### 🔁 Active_Inference
 
-This folder contains our implementation of **Active Inference-based decision-making**. It integrates free energy minimization as part of the trajectory evaluation process, enabling behavior that is more consistent with predictive coding and cognitive control principles.
+This folder contains our implementation of **Active Inference-based decision-making**. 
 
 ### 🧭 visualize_tool
 
-This folder provides **custom visualization tools** for inspecting trajectory planning results, including plots and risk distribution across timesteps. It helps better understand and analyze the internal planning logic.
+This folder provides **custom visualization tools** for inspecting trajectory planning results, including plots and risk distribution across timesteps. 
