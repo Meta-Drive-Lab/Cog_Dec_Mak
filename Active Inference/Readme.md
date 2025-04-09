@@ -7,11 +7,9 @@
 
 ## 🔍 Overview
 
-This function implements a **Free Energy minimization principle**, central to the framework of **Active Inference**. In this context, free energy serves as a measure of deviation between the predicted (preferred) latent trajectory — typically aligned with high-probability, stable behaviors — and the actual executed trajectory.
+This function calculates the **free energy cost** of a trajectory in a way that is fully consistent with the principles of **Active Inference**. It evaluates how well a trajectory aligns with the agent’s expected latent behavior by measuring deviations from the preferred ref path.
 
-
-
-The core idea is that an intelligent agent seeks to minimize this free energy to reduce surprise or uncertainty about its future states. In motion planning, this translates to preferring trajectories that are **consistent with prior beliefs about optimal behavior**, such as staying close to the inferred path of least resistance — often represented by structural priors like ref lane centers.
+The cost serves as a proxy for variational free energy and can be directly used in planning frameworks based on **Active Inference**, guiding the agent to minimize surprise and maintain consistency with internal beliefs.
 
 ---
 
