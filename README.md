@@ -75,7 +75,7 @@ We have added two additional modules to extend the original framework:
 
 ### 🔁 Active_Inference
 
-This folder contains our implementation of **Active Inference-based decision-making**. 
+This folder contains our implementation of **Active Inference-based decision-making**. If you want to use this module, change the file in the planner with the same filename.
 
 ### 🧭 visualize_tool
 
