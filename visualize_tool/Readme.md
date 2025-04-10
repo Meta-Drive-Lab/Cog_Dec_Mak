@@ -1,4 +1,3 @@
-
 # 🚗 Planner and Risk Visualization Tool (v2.0)
 
 A PyQt5-based GUI tool for scenario-based trajectory planning, risk evaluation, and visualization in autonomous driving. This tool loads driving scenarios from XML, runs a trajectory planner, computes risk values for ego and obstacle vehicles, and provides an interactive GUI for exploration and visualization.
@@ -58,7 +57,6 @@ Ensure that the file path specified in main.py points to a valid scenario XML fi
 
 🧮 Params Input\
 	•	Time Step: Initial time step for planning\
-	•	Start Index: Start position for EV
 
 🕹 Action Buttons\
 	•	Calculate Scenario: Initialize planner and generate risk trajectories\
@@ -89,7 +87,7 @@ You can replace this with any XML scenario file.
 ## 📷 Screenshot Example
 
 
-![App Screenshot](./iShot_2025-04-09_17.45.14.png)
+![App Screenshot](./iShot_2025-04-10_22.39.09.png)
 
 
 
