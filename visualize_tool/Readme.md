@@ -56,7 +56,7 @@ Ensure that the file path specified in main.py points to a valid scenario XML fi
 ## 🖥 GUI Overview
 
 🧮 Params Input\
-	•	Time Step: Initial time step for planning\
+	•	Time Step: Initial time step for planning
 
 🕹 Action Buttons\
 	•	Calculate Scenario: Initialize planner and generate risk trajectories\
