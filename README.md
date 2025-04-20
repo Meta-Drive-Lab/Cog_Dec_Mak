@@ -1,82 +1,81 @@
+# **Empowering Socially Sensitive Autonomous Vehicles Using Human-plausible Cognitive Encoding**
 
-# Cog Enc for Dec Mak
+This repository contains the official codebase for the paper **“Empowering Socially Sensitive Autonomous Vehicles Using Human-plausible Cognitive Encoding”**.
 
-This README.md details how to reproduce the results in our paper.
+It provides the implementation of ethical and cognitively plausible planning methods for autonomous vehicles in standardized simulation environments.
 
-## System Requirements
-* Operating System: Linux Ubuntu 20.04 (recommended) or MacOS (only for demo)
-* Programming Language: Python 3.8
-
-## Installation
-
-An isolated virtual environment is recommended for installation (such as Conda). The installation of this repository is shown as follows.
-
-1. Clone this repository with:
-
-    `git clone https://github.com/Meta-Drive-Lab/Cog_Dec_Mak.git`
-
-2. Navigate to the root folder of the repository (`[..]/Cog_Dec_Mak`) and install requirements:
-
-    `pip install -r requirements.txt`
-
-3. Download the required scenarios from [CommonRoad scenarios](https://gitlab.lrz.de/tum-cps/commonroad-scenarios) by:
-
-    `git clone https://gitlab.lrz.de/tum-cps/commonroad-scenarios`
-
-    Thus, you will have the following folder structure:
-
-    ```
-    ├── Cog_Dec_Mak (This repository)
-      ├── commonroad-scenarios
-    ```
-    
-
-## Quick Start Demo
-
-To run the ethical planner on an exemplary default scenario, execute the following command from the root directory of this repository:
-    
-* `python planner/Frenet/frenet_planner.py`
-
-![Exemplary Result](readme/demo.gif)
-
-You will see a live visualization of the demo.
-Now you can start with your own experiments by changing the [configs](/planner/Frenet/configs/README.md) or selecting another scenario by adding
-
-* `--scenario <path-to-scenario>`
-
-to the command.
-
-By default logs are saved and can be analyzed afterwards by running:
-
-* `python planner/Frenet/analyze_tools/analyze_log.py`
-
-
-[<img src="./readme/analysis.jpg" width="450" height="250">](/readme/analysis.jpg)
-
-The curves of velocity and acceleration can be seen by running `python plot_vel_acc.py`.
+------
 
 
 
-## How to reproduce results
+## **📦 Overview of Modules**
 
-The following describes how the results from the paper can be reproduced. 
+### **1. 🚗 Trajectory Planning Module (Ethical Frenet Planner)**
 
-To evaluate the proposed method over all 2000 scenarios, please run:
+- **Function**: Implements a trajectory planner with ethical constraints, supporting safe and reasonable trajectory generation in CommonRoad standard scenarios.
+- **Features**: Allows scenario-specific testing and visualizes both the decision-making process and generated trajectories.
 
-* `python planner/Frenet/plannertools/evaluatefrenet.py --weights ethical --all`
+---
 
-Please note that at least 200 GB space left is required on your device for saving the log files. For better runtime, we recommend using [multiprocessing](/planner/Frenet/plannertools/evaluatefrenet.py#L46) and [GPU](planner/Frenet/configs/prediction.json#L4) for the prediction network (RTX3090*8 used in our work). Evaluating all scenarios in 10 parallel threads with a GPU takes around 48 hours (sometimes longer, depends on your computational resources). Results and logfiles for each run are stored in `planner/Frenet/results`.
+### **2. 🧾 Logging & Evaluation Tools**
 
-After tesing, standard evaluation metrics relevant to our paper such as the cummulated harm from 2000 benchmark scenarios can be seen within the results (`results/eval/harm.json`). 
+- **Metrics**: Includes cumulative harm score, safety violations, and comfort evaluation.
+- **Batch Evaluation**:
+  - Supports large-scale testing on 2000+ CommonRoad scenarios.
+  - Generates visual metrics such as speed and acceleration curves (see plot_vel_acc.py).
+- **Hardware Requirements**:
+  - Approx. 200 GB disk space required;
+  - Multi-threading and GPU acceleration recommended (e.g., 8× RTX3090).
 
-## Extensions
+------
 
-We have added two additional modules to extend the original framework:
+### **3. 🗺️ Scenario Resources (CommonRoad Benchmark Scenarios)**
 
-### 🔁 Active_Inference
+- **Location**: commonroad-scenarios/
+- **Source**: [CommonRoad Project](https://commonroad.in.tum.de/)
+- **Purpose**: Provides diverse and high-fidelity simulation environments for testing planning and decision-making generalization capabilities.
 
-This folder contains our implementation of **Active Inference-based decision-making**. If you want to use this module, change the file in the planner with the same filename.
+------
 
-### 🧭 visualize_tool
+### **4. 🔁 Active Inference Module**
 
-This folder provides **custom visualization tools** for inspecting trajectory planning results, including plots and risk distribution across timesteps. 
+- **Location**: Active_Inference/
+- **Function**: Implements an Active Inference-based decision-making mechanism that can be plugged into the planner to replace the default module.
+- **Use Case**: Enables behavior selection driven by information gain, especially under uncertainty in perception.
+
+------
+
+### **5. 🧭 Trajectory Visualization Tool**
+
+- **Location**: visualize_tool/
+- **Function**: Visualizes planned trajectories with overlays including:
+  - Path progression,
+  - Speed and acceleration distribution,
+  - Risk maps and other metrics.
+- **Advantage**: Supports multi-dimensional overlays for effective debugging and interpretability analysis.
+
+------
+
+### **6. 🧠 Cognitive Encoding Module**
+
+- **Integration**: Embedded within the frenet_planner pipeline (Perception → Encoding → Decision).
+- **Function**: Extracts high-level semantic features from raw environment input, simulating human-like cognitive pre-processing before decision-making.
+- **Input Features**: Spatial relationships, relative velocities, and behavioral intentions.
+- **Purpose**: Provides interpretable and structured feature support to improve planning behavior and social sensitivity.
+
+------
+
+
+
+## **📮 Request Full Version**
+
+The full version of the code is currently under active maintenance and **will be released soon**.
+
+A preliminary version is **available upon request** from the first author.
+
+If you wish to access the code:
+
+- Please **send an application email** to: lhldlut@163.com
+- Clearly **brief your intended use** (academic purposes only)
+- ⚠️ **Commercial use is strictly prohibited**
+- We will **evaluate your request** (please note that responses may not be immediate — kindly avoid sending duplicate emails)
