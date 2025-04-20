@@ -48,11 +48,7 @@ It provides the implementation of ethical and cognitively plausible planning met
 ### **5. 🧭 Trajectory Visualization Tool**
 
 - **Location**: visualize_tool/
-- **Function**: Visualizes planned trajectories with overlays including:
-  - Path progression,
-  - Speed and acceleration distribution,
-  - Risk maps and other metrics.
-- **Advantage**: Supports multi-dimensional overlays for effective debugging and interpretability analysis.
+- **Function**: Visualizes planned trajectories and risks.
 
 ------
 
