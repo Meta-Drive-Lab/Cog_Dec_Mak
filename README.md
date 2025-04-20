@@ -49,7 +49,7 @@ It provides the implementation of ethical and cognitively plausible planning met
 
 - **Location**: visualize_tool/
 - **Function**: Visualizes planned trajectories and risks.
-
+![App Screenshot](./iShot_2025-04-09_17.45.14.png)
 ------
 
 ### **6. 🧠 Cognitive Encoding Module**
@@ -60,7 +60,6 @@ It provides the implementation of ethical and cognitively plausible planning met
 - **Purpose**: Provides interpretable and structured feature support to improve planning behavior and social sensitivity.
 
 ------
-
 
 
 ## **📮 Request Full Version**
