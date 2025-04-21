@@ -59,7 +59,6 @@ It provides the implementation of ethical and cognitively plausible planning met
 - **Location**: visualize_tool/
 - **Function**: Visualizes planned trajectories and risks.
 <img src="./iShot_2025-04-10_22.39.09.png" alt="App Screenshot" width="50%"/>
-------
 
 
 
