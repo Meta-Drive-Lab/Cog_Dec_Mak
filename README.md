@@ -13,8 +13,8 @@ It provides the implementation of ethical and cognitively plausible planning met
 ### **1. 🧠 Cognitive Encoding Module**
 
 - **Integration**: Embedded within the frenet_planner pipeline (Perception → Encoding → Decision).
-- **Function**: Extracts high-level semantic features from raw environment input, simulating human-like cognitive pre-processing before decision-making.
-- **Input Features**: Spatial relationships, relative velocities, and behavioral intentions.
+- **Function**: Incorporates ethical considerations for different road users, simulating human-like holistic evaluation in driving decision-making.
+- **Input Features**: Spatial relationships, relative velocities.
 - **Purpose**: Provides interpretable and structured feature support to improve planning behavior and social sensitivity.
 
 ------
@@ -58,7 +58,7 @@ It provides the implementation of ethical and cognitively plausible planning met
 
 - **Location**: visualize_tool/
 - **Function**: Visualizes planned trajectories and risks.
-<img src="./iShot_2025-04-10_22.39.09.png" alt="App Screenshot" width="40%"/>
+<img src="./iShot_2025-04-10_22.39.09.png" alt="App Screenshot" width="50%"/>
 ------
 
 
