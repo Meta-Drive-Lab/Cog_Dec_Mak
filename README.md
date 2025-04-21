@@ -19,7 +19,7 @@ It provides the implementation of ethical and cognitively plausible planning met
 
 ------
 
-### **2. 🚗 Trajectory Planning Module (Ethical Frenet Planner)**
+### **2. 🚗 Trajectory Planning Module (Ethical Frenet Planner [Ethical Frenet Planner Project](https://github.com/TUMFTM/EthicalTrajectoryPlanning))**
 
 - **Function**: Implements a trajectory planner with ethical constraints, supporting safe and reasonable trajectory generation in CommonRoad standard scenarios.
 - **Features**: Allows scenario-specific testing and visualizes both the decision-making process and generated trajectories.
